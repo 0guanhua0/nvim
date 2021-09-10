@@ -78,3 +78,8 @@ set background=dark
 colorscheme PaperColor
 
 "-- papercolor-theme END
+let $PATH='/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin'
+
+"copy & paste
+vnoremap <C-c> "+y
+map <C-v> "+P
