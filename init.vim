@@ -86,3 +86,7 @@ colorscheme PaperColor
 "-- papercolor-theme END
 
 source ~/.config/nvim/coc.vim
+" init.vim
+call plug#begin('~/.vim/plugged')
+Plug 'lukas-reineke/indent-blankline.nvim'
+call plug#end()
