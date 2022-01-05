@@ -58,6 +58,7 @@ Plug 'SirVer/ultisnips'                             " https://github.com/sirver/
 
 "> Theme
 Plug 'NLKNguyen/papercolor-theme' " https://github.com/NLKNguyen/papercolor-theme
+Plug 'lukas-reineke/indent-blankline.nvim'
 call plug#end()
 
 "-- plug END
@@ -86,7 +87,3 @@ colorscheme PaperColor
 "-- papercolor-theme END
 
 source ~/.config/nvim/coc.vim
-" init.vim
-call plug#begin('~/.vim/plugged')
-Plug 'lukas-reineke/indent-blankline.nvim'
-call plug#end()
