@@ -45,7 +45,9 @@ call plug#begin()
 "> Must Have
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'      " https://github.com/ctrlpvim/ctrlp.vim
+Plug 'lervag/file-line'
 Plug 'mkitt/tabline.vim'       " https://github.com/mkitt/tabline.vim
+Plug 'rhysd/git-messenger.vim'
 Plug 'ryanoasis/vim-devicons'  " https://github.com/ryanoasis/vim-devicons + https://github.com/ryanoasis/nerd-fonts/
 Plug 'tpope/vim-commentary'    " https://github.com/tpope/vim-commentary
 Plug 'tpope/vim-fugitive'      " https://github.com/tpope/vim-fugitive
@@ -62,6 +64,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 call plug#end()
 
 "-- plug END
+let g:git_messenger_always_into_popup = v:true
 
 autocmd VimEnter *
   \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
