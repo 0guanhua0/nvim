@@ -5,24 +5,32 @@ filetype indent on
 filetype plugin on
 
 set encoding=UTF-8
+set smartcase ignorecase
 
 syntax on
-set nocompatible
+set autochdir
+set autoindent
+set clipboard=unnamed
+set colorcolumn=80
 set hlsearch
-set number
 set laststatus=2
-set vb
+set list
+set mouse=a
+set noscrollbind
+set number
 set ruler
 set spelllang=en_us
-set autoindent
-set colorcolumn=80
-set mouse=a
-set clipboard=unnamed
-set noscrollbind
+set splitbelow
+set splitright
+set vb
 set wildmenu
-set autochdir
 
 hi Search cterm=NONE ctermfg=black ctermbg=red
+set wildcharm=<C-Z>
+cnoremap <expr> <up> wildmenumode() ? "\<left>" : "\<up>"
+cnoremap <expr> <down> wildmenumode() ? "\<right>" : "\<down>"
+cnoremap <expr> <left> wildmenumode() ? "\<up>" : "\<left>"
+cnoremap <expr> <right> wildmenumode() ? " \<bs>\<C-Z>" : "\<right>"
 
 " netrw
 
@@ -53,9 +61,6 @@ Plug 'tpope/vim-commentary'    " https://github.com/tpope/vim-commentary
 Plug 'tpope/vim-fugitive'      " https://github.com/tpope/vim-fugitive
 Plug 'vim-airline/vim-airline' " https://github.com/vim-airline/vim-airline
 
-"> Go
-Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' } " https://github.com/fatih/vim-go
-Plug 'neoclide/coc.nvim', {'branch': 'release'}     " https://github.com/neoclide/coc.nvim
 Plug 'SirVer/ultisnips'                             " https://github.com/sirver/UltiSnips
 
 "> Theme
@@ -89,4 +94,7 @@ colorscheme PaperColor
 
 "-- papercolor-theme END
 
-source ~/.config/nvim/coc.vim
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
