@@ -65,7 +65,6 @@ Plug 'SirVer/ultisnips'                             " https://github.com/sirver/
 
 "> Theme
 Plug 'NLKNguyen/papercolor-theme' " https://github.com/NLKNguyen/papercolor-theme
-Plug 'lukas-reineke/indent-blankline.nvim'
 call plug#end()
 
 "-- plug END
