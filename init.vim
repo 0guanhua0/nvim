@@ -62,6 +62,8 @@ Plug 'tpope/vim-fugitive'      " https://github.com/tpope/vim-fugitive
 Plug 'vim-airline/vim-airline' " https://github.com/vim-airline/vim-airline
 
 Plug 'SirVer/ultisnips'                             " https://github.com/sirver/UltiSnips
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'github/copilot.vim'
 
 "> Theme
 Plug 'NLKNguyen/papercolor-theme' " https://github.com/NLKNguyen/papercolor-theme
