@@ -10,6 +10,7 @@ set smartcase ignorecase
 syntax on
 set autochdir
 set autoindent
+set clipboard+=unnamedplus
 set clipboard=unnamed
 set colorcolumn=80
 set hlsearch
