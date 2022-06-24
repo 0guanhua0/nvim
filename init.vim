@@ -10,8 +10,6 @@ set smartcase ignorecase
 syntax on
 set autochdir
 set autoindent
-set clipboard+=unnamedplus
-set clipboard=unnamed
 set colorcolumn=80
 set hlsearch
 set laststatus=2
@@ -64,7 +62,7 @@ Plug 'vim-airline/vim-airline' " https://github.com/vim-airline/vim-airline
 
 Plug 'SirVer/ultisnips'                             " https://github.com/sirver/UltiSnips
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'github/copilot.vim'
+Plug 'ojroques/vim-oscyank', {'branch': 'main'}
 
 "> Theme
 Plug 'NLKNguyen/papercolor-theme' " https://github.com/NLKNguyen/papercolor-theme
@@ -100,3 +98,5 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+autocmd TextYankPost * if v:event.operator is 'y' && v:event.regname is '' | execute 'OSCYankReg "' | endif
