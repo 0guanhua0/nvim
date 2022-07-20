@@ -101,3 +101,4 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 autocmd TextYankPost * if v:event.operator is 'y' && v:event.regname is '' | execute 'OSCYankReg "' | endif
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
